@@ -51,7 +51,7 @@ RUN apk -Uq --no-cache add curl && \
     apk -q del curl
 
 # download cloudplow
-RUN git clone --depth 1 --single-branch --branch develop https://github.com/l3uddz/cloudplow /opt/cloudplow
+RUN git clone --depth 1 --single-branch --branch master https://github.com/l3uddz/cloudplow /opt/cloudplow
 
 WORKDIR /opt/cloudplow
 ENV PATH=/opt/cloudplow:${PATH}
